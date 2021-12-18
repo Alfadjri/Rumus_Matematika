@@ -18,7 +18,7 @@ class TampilanMenu {
 
     static void header(){
         System.out.println("============================================");
-        System.out.println("= Menu rumus Matematika dan Data Mahasiswa =");
+        System.out.println("=           Menu rumus Matematika          =");
         System.out.println("============================================");
     }
     
