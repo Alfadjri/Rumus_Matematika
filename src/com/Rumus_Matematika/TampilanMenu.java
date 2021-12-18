@@ -7,36 +7,6 @@ class TampilanMenu {
     protected static Scanner scan = new Scanner(System.in);
     protected static RumusBangunDatar rbd = new RumusBangunDatar();
 
-    static void TampilanUtama() {
-        System.out.println("============================================");
-        System.out.println("= Menu rumus Matematika dan Data Mahasiswa =");
-        System.out.println("============================================");
-        System.out.println("= 1.Bangun Datar                           =");
-        System.out.println("= 2.Bangun Ruang                           =");
-        System.out.println("============================================");
-        System.out.println("= q.quit                                   =");
-        System.out.println("============================================");
-        System.out.print("pilihan Anda  : ");
-    }
-
-    static void TampilanBanungDatar() {
-        System.out.println("============================================");
-        System.out.println("= Menu rumus Matematika dan Data Mahasiswa =");
-        System.out.println("============================================");
-        System.out.println("= 1.Persegi                                =");
-        System.out.println("= 2.Persegi Panjang                        =");
-        System.out.println("= 3.Segitiga                               =");
-        System.out.println("= 4.Lingkaran                              =");
-        System.out.println("= 5.Jajar Genjang                          =");
-        System.out.println("= 6.Belah Ketupat                          =");
-        System.out.println("= 7.Trapesium                              =");
-        System.out.println("= 8.Layang-layang                          =");
-        System.out.println("============================================");
-        System.out.println("= b.back                                   =");
-        System.out.println("============================================");
-        System.out.print("pilihan Anda  : ");
-
-    }
 
     static void footer() {
         System.out.println("============================================");
@@ -46,10 +16,48 @@ class TampilanMenu {
         System.out.print("pilihan Anda  : ");
     }
 
-    static void tampilanPersegi() {
+    static void header(){
         System.out.println("============================================");
         System.out.println("= Menu rumus Matematika dan Data Mahasiswa =");
         System.out.println("============================================");
+    }
+    
+
+    static void TampilanBanungDatar() {
+        header();
+        System.out.println("= 1.Persegi                                =");
+        System.out.println("= 2.Persegi Panjang                        =");
+        System.out.println("= 3.Segitiga                               =");
+        System.out.println("= 4.Lingkaran                              =");
+        System.out.println("= 5.Jajar Genjang                          =");
+        System.out.println("= 6.Belah Ketupat                          =");
+        System.out.println("= 7.Trapesium                              =");
+        System.out.println("= 8.Layang-layang                          =");
+        System.out.println("============================================");
+        System.out.println("= q.quit                                   =");
+        System.out.println("============================================");
+        System.out.print("pilihan Anda  : ");
+
+    }
+
+    static void TampilanBanungRuang(){
+        header();
+        System.out.println("= 1.Kubus                                  =");
+        System.out.println("= 2.Balok                                  =");
+        System.out.println("= 3.Limas Segiempat                        =");
+        System.out.println("= 4.Limas Segitiga                         =");
+        System.out.println("= 5.Prisma Segitiga                        =");
+        System.out.println("= 6.Silinder                               =");
+        System.out.println("= 7.Kerucut                                =");
+        System.out.println("= 8.Bola                                   =");
+        System.out.println("============================================");
+        System.out.println("= b.back                                   =");
+        System.out.println("============================================");
+        System.out.print("pilihan Anda  : ");
+    }
+    
+    static void tampilanPersegi() {
+        header();
         System.out.println("=                Persegi                   =");
         System.out.print("= Masukan nilai sisi : ");
         double sisi = scan.nextDouble();
@@ -61,9 +69,7 @@ class TampilanMenu {
     }
 
     static void tampilanPersegiPanjang() {
-        System.out.println("============================================");
-        System.out.println("= Menu rumus Matematika dan Data Mahasiswa =");
-        System.out.println("============================================");
+        header();
         System.out.println("=              Persegi Panjang             =");
         System.out.print("= Masukan nilai panjang : ");
         double panjang = scan.nextDouble();
@@ -80,9 +86,7 @@ class TampilanMenu {
     }
 
     static void tampilanSegitiga() {
-        System.out.println("============================================");
-        System.out.println("= Menu rumus Matematika dan Data Mahasiswa =");
-        System.out.println("============================================");
+        header();
         System.out.println("=                 Segitiga                 =");
         System.out.print("= Masukan nilai Alas : ");
         double alas = scan.nextDouble();
@@ -100,9 +104,7 @@ class TampilanMenu {
     }
 
     static void tampilanLingkaran() {
-        System.out.println("============================================");
-        System.out.println("= Menu rumus Matematika dan Data Mahasiswa =");
-        System.out.println("============================================");
+        header();
         System.out.println("=                Lingkaran                 =");
         System.out.print("= Masukan nilai Jari-Jari : ");
         double r = scan.nextDouble();
@@ -115,9 +117,7 @@ class TampilanMenu {
     }
 
     static void tampilanJajarGenjang() {
-        System.out.println("============================================");
-        System.out.println("= Menu rumus Matematika dan Data Mahasiswa =");
-        System.out.println("============================================");
+        header();
         System.out.println("=              Jajar Genjang               =");
         System.out.print("= Masukan nilai Alas : ");
         double alas = scan.nextDouble();
@@ -134,9 +134,7 @@ class TampilanMenu {
     }
 
     static void tampilanBelahKetupat() {
-        System.out.println("============================================");
-        System.out.println("= Menu rumus Matematika dan Data Mahasiswa =");
-        System.out.println("============================================");
+        header();
         System.out.println("=              Belah Ketupat              =");
         System.out.print("= Masukan nilai sisi : ");
         double sisi = scan.nextDouble();
@@ -154,9 +152,7 @@ class TampilanMenu {
     }
 
     static void tampilanTrapesium() {
-        System.out.println("============================================");
-        System.out.println("= Menu rumus Matematika dan Data Mahasiswa =");
-        System.out.println("============================================");
+        header();
         System.out.println("=              Trapesium              =");
         System.out.print("= Masukan nilai atas : ");
         double atas = scan.nextDouble();
@@ -175,9 +171,7 @@ class TampilanMenu {
     }
 
     static void tampilanLayang() {
-        System.out.println("============================================");
-        System.out.println("= Menu rumus Matematika dan Data Mahasiswa =");
-        System.out.println("============================================");
+        header();
         System.out.println("=               Layang-Layang              =");
         System.out.print("= Masukan nilai Diagonal 1  : ");
         double d1 = scan.nextDouble();

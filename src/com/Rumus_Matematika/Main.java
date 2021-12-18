@@ -1,28 +1,12 @@
 package com.Rumus_Matematika;
 import java.util.Scanner;
-import java.io.IOException;
 
 public class Main {
     protected static Scanner scan = new Scanner(System.in);
     protected static TampilanMenu tp = new TampilanMenu();
-    protected static String input = "0";
+    protected static String input;
 
     public static void main(String[] args) {
-        do {
-            clear();
-            tp.TampilanUtama();
-            input = scan.nextLine();
-            switch (input) {
-                case "1":
-                    clear();
-                    selectBangunDatar();
-                break;
-                case "2":
-                    break;
-            }
-        } while (!input.equals("q"));
-    }
-    private static void selectBangunDatar(){
         String select;
         do{
             clear();
@@ -61,13 +45,12 @@ public class Main {
                     clear();
                     LayangLayang();
                 break; 
-                case "b":
-                    select = "b";
+                case "q":
+                    select = "q";
                 break;
             }   
-        }while( select  != "b");
+        }while( select  != "q");
     }
-    
     private static void persegi(){
         clear();
         tp.tampilanPersegi();

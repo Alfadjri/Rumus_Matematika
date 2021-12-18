@@ -3,8 +3,8 @@ package com.Rumus_Matematika.lib;
 import java.lang.Math;
 
 public class RumusBangunDatar {
-    RumusDasar rd = new RumusDasar();
-    private static double v = 3.14;
+    protected final RumusDasar rd = new RumusDasar();
+    protected final static double v = 3.14;
 
     public double LuasPersegi(double sisi) {
         double hasil = rd.kali(sisi, sisi);
