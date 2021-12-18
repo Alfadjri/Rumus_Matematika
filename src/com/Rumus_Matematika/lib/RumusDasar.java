@@ -1,43 +1,39 @@
 package com.Rumus_Matematika.lib;
 public class RumusDasar {
     // tulisakan rumus yang mau di impelemntaiskan di sini 
-    public int persegi(int sisi){
-        int hasil = kali(sisi,sisi);
+    
+    // menggunakan modifire  default karena function ini tidak boleh keluar dari  packagenya 
+
+    double tambah(double val1 , double val2){
+        double hasil = val1 + val2;
+        return hasil;
+    }
+    double kurang(double val1, double val2){
+        double hasil = val1 - val2;
+        return hasil;
+    }
+    double bagi(double val1,double val2){
+        double hasil = val1 / val2;
+        return hasil;
+    }
+    double kali(double val1 , double val2){
+        double hasil = val1 * val2;
         return hasil;
     }
 
-    private int tambah(int val1 , int val2){
-        int hasil = val1 + val2;
+    // overloading variable
+
+    double tambah(double val1 , double val2,double val3){
+        double hasil = val1 + val2 + val3;
         return hasil;
     }
-    private int kurang(int val1, int val2){
-        int hasil = val1 - val2;
-        return hasil;
-    }
-    private int bagi(int val1,int val2){
-        int hasil = val1 / val2;
-        return hasil;
-    }
-    private int kali(int val1 , int val2){
-        int hasil = val1 * val2;
+    double tambah(double val1 , double val2,double val3,double val4){
+        double hasil = val1 + val2 + val3 + val4;
         return hasil;
     }
 
-    // overloading method
-    private float tambah(float val1 , float val2){
-        float hasil = val1 + val2;
-        return hasil;
-    }
-    private float kurang(float val1, float val2){
-        float hasil = val1 - val2;
-        return hasil;
-    }
-    private float bagi(float val1,float val2){
-        float hasil = val1 / val2;
-        return hasil;
-    }
-    private float kali(float val1 , float val2){
-        float hasil = val1 * val2;
+    double kali(double val1 , double val2,double val3){
+        double hasil = val1 * val2 * val3;
         return hasil;
     }
 }
