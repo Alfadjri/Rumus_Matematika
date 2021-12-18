@@ -6,3 +6,11 @@ Rumus Matematika
     - 1 orang membuat branch jika sudah selesai di harpakan marge dan menghubungi pemilik repo 
     - Update List jangan lupa 
   - List Rumus
+    - Persegi
+    - Persegi Panjang
+    - Segitiga
+    - Lingkaran
+    - Jajar Genjang
+    - Belah Ketupat
+    - Trapesium
+    - Layang-layang

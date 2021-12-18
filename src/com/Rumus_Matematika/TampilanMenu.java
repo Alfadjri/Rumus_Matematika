@@ -39,22 +39,6 @@ class TampilanMenu {
         System.out.print("pilihan Anda  : ");
 
     }
-
-    static void TampilanBanungRuang(){
-        header();
-        System.out.println("= 1.Kubus                                  =");
-        System.out.println("= 2.Balok                                  =");
-        System.out.println("= 3.Limas Segiempat                        =");
-        System.out.println("= 4.Limas Segitiga                         =");
-        System.out.println("= 5.Prisma Segitiga                        =");
-        System.out.println("= 6.Silinder                               =");
-        System.out.println("= 7.Kerucut                                =");
-        System.out.println("= 8.Bola                                   =");
-        System.out.println("============================================");
-        System.out.println("= b.back                                   =");
-        System.out.println("============================================");
-        System.out.print("pilihan Anda  : ");
-    }
     
     static void tampilanPersegi() {
         header();
