@@ -14,3 +14,8 @@ Rumus Matematika
     - Belah Ketupat
     - Trapesium
     - Layang-layang
+
+  - Cara Compile
+    - Karena Foldernya saya buat sendiri dan lagi belajar tentang pack
+      - masuk ke folder out dan jalankan : java com.Rumus_Matematika.Main
+      - file javanya ada di src cara compilenya : javac com/Rumus_Matemaika/Main.java -d ../out/
